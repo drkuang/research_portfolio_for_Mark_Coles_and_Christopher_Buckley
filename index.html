@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research portfolio of Zheng Kuang — tumour immunology, fibroblast biology, and single-cell and spatial transcriptomics.">
+  <title>Zheng Kuang | Tumour Immunology Research Portfolio</title>
+  <style>
+    :root {
+      --navy: #17324d; --blue: #315f86; --teal: #2c817a;
+      --ink: #243447; --muted: #637487; --line: #dfe6ed;
+      --paper: #ffffff; --bg: #f4f7fa; --soft: #edf3f7;
+      --accent: #b56a3b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.65; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: 0 auto; }
+    header { background: linear-gradient(125deg, #17324d, #244d68); color: white; padding: 54px 0 36px; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: 700; color: #b9d5e8; }
+    h1 { margin: 10px 0 6px; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.12; letter-spacing: -.035em; }
+    .subtitle { margin: 0; color: #e0eaf1; font-size: clamp(1rem, 2vw, 1.2rem); }
+    .nav { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 26px; font-size: .91rem; }
+    .nav a { color: #fff; opacity: .9; }
+    main { padding: 28px 0 56px; }
+    section { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(20px, 4vw, 34px); margin: 0 0 20px; box-shadow: 0 5px 18px rgba(23,50,77,.035); }
+    h2 { margin: 0 0 18px; font-size: 1.45rem; letter-spacing: -.02em; color: var(--navy); }
+    h3 { margin: 0 0 8px; font-size: 1.03rem; color: var(--navy); }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    .lead { font-size: 1.05rem; max-width: 850px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
+    .chip { border-radius: 999px; padding: 5px 11px; background: var(--soft); color: #34536d; font-size: .82rem; }
+    .experience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .mini-card { border-left: 3px solid var(--teal); padding: 3px 0 3px 15px; }
+    .meta { color: var(--muted); font-size: .88rem; }
+    .figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; }
+    figure img { display: block; width: 100%; aspect-ratio: 1.58 / 1; object-fit: cover; background: #edf1f5; }
+    figure.award { display: flex; align-items: center; justify-content: center; padding: 10px; }
+    figure.award img { width: auto; max-width: 100%; max-height: 320px; aspect-ratio: auto; object-fit: contain; }
+    .award-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .hl { color: #c0392b; font-weight: 700; }
+    figure.award figcaption h3 { color: #c0392b; }
+    figcaption { padding: 13px 15px 15px; }
+    figcaption p { font-size: .9rem; color: var(--muted); margin-top: 4px; }
+    figcaption .tag { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); font-weight: 700; }
+    .group-label { margin: 26px 0 12px; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 700; }
+    .group-label:first-of-type { margin-top: 0; }
+    .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .fit-card { background: #f7fafc; border-radius: 11px; padding: 17px; }
+    .summary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 4px 0 22px; }
+    .summary-card { background: linear-gradient(125deg, #17324d, #244d68); color: #fff; border-radius: 12px; padding: 16px 18px; }
+    .summary-card h3 { color: #b9d5e8; margin: 0 0 6px; font-size: .92rem; }
+    .summary-card p { margin: 0; font-size: .9rem; color: #e0eaf1; }
+    .skills { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; }
+    ul { margin: 8px 0 0; padding-left: 19px; }
+    li { margin: 5px 0; }
+    footer { text-align: center; color: var(--muted); font-size: .84rem; padding: 8px 0 30px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 15px; font-size: .93rem; }
+    @media (max-width: 680px) {
+      header { padding: 40px 0 28px; }
+      .experience-grid, .figure-grid, .fit-grid, .award-grid, .summary-grid { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: 1fr; }
+      .nav { gap: 12px; }
+      section { border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Research Portfolio</div>
+      <h1>Zheng Kuang</h1>
+      <p class="subtitle">Tumour Immunology · Fibroblast Biology · Single-cell &amp; Spatial Omics</p>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#fit">CRC TLS project fit</a>
+        <a href="#awards">Awards</a>
+        <a href="#computational">Computational results</a>
+        <a href="#spatial">Spatial &amp; single-cell</a>
+        <a href="#experimental">Experimental results</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="profile">
+      <h2>Research Profile</h2>
+      <p class="lead">I am an immunology researcher who graduated with a master's degree in tumour immunology in July 2026, with a background in <strong>computational biology</strong> and <strong>experimental cancer research</strong>. My expertise includes single-cell and spatial transcriptomics, multi-omics analysis, and the functional investigation of tumour stromal cells.</p>
+      <p class="lead">My master's work focused on the functional heterogeneity and plasticity of cancer-associated fibroblasts (CAFs). I developed a gene-plasticity-based method to characterise CAF subtypes, and functionally validated SUSD2-positive CAFs in pancreatic cancer, showing that <em>Susd2</em> deletion suppresses tumour growth, reduces collagen deposition, and promotes CD8<sup>+</sup> T-cell and MHC-II<sup>+</sup> macrophage infiltration.</p>
+      <p class="lead">I am particularly interested in how fibroblast states organise local immune responses in solid tumours. The proposed DPhil on inducing tertiary lymphoid structures (TLS) in metastatic colorectal cancer closely matches my background in CAF heterogeneity, stromal remodelling, immune infiltration and computational analysis of single-cell and spatial data. I hope to investigate how fibroblast programmes and local tissue context shape TLS formation, maturation and anti-tumour function, while developing further expertise in in vivo immunology and spatial tissue analysis.</p>
+      <div class="chips">
+        <span class="chip">Single-cell &amp; spatial omics</span>
+        <span class="chip">Tumour microenvironment</span>
+        <span class="chip">Immune–stromal interactions</span>
+        <span class="chip">Cell–cell communication</span>
+        <span class="chip">Experimental validation</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Research Experience</h2>
+      <div class="experience-grid">
+        <div class="mini-card">
+          <h3>Master’s Research · Peking University</h3>
+          <p>Investigated gene-plasticity patterns across cancer-associated fibroblasts (CAFs), then functionally validated SUSD2-positive CAFs in pancreatic cancer. This work established a plasticity-based framework for identifying CAF subtypes and evaluating their functional roles.</p>
+          <p class="meta">Focus: CAF heterogeneity, ECM remodelling, immune infiltration and tumour growth.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Collaborative Multi-omics Research</h3>
+          <p>Contributed to projects involving single-cell transcriptomics, spatial analysis, proteomics and inflammatory-disease multi-omics, including an adenoid cystic carcinoma single-cell atlas and osteosarcoma exosome proteomics.</p>
+          <p class="meta">Co-authored two publications in <em>Advanced Science</em>.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Research Assistant · Shanghai Jiao Tong University</h3>
+          <p>Investigated Foxp3<sup>+</sup> regulatory T cells in tissue repair, building a systematic foundation in basic immunology techniques.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Undergraduate Research · Naval Medical University</h3>
+          <p>Received training in bioinformatics and tumour immunotherapy, publishing first-author and co-first-author reviews in Chinese and SCI journals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fit">
+      <h2>Fit with the DPhil Project: Inducing TLS in Metastatic Colorectal Cancer</h2>
+      <p class="lead">My background connects directly with the project's central questions: how fibroblast states shape immune organisation, how stromal remodelling affects lymphocyte access, and how single-cell and spatial analyses can reveal mechanisms that may be tested experimentally.</p>
+      <div class="summary-grid">
+        <div class="summary-card"><h3>1 · Fibroblast biology</h3><p>Master’s research on CAF heterogeneity, gene plasticity, SUSD2-positive CAFs and tumour-associated stromal remodelling.</p></div>
+        <div class="summary-card"><h3>2 · Single-cell &amp; spatial analysis</h3><p>Analysis of cellular states, tissue organisation, neighbourhood patterns and ligand–receptor signalling in complex datasets.</p></div>
+        <div class="summary-card"><h3>3 · Experimental immunology</h3><p>Experience with mouse tumour models, flow cytometry/FACS, genetic perturbation and tissue-level validation.</p></div>
+      </div>
+      <div class="fit-grid">
+        <div class="fit-card">
+          <h3>From CAF heterogeneity to TLS-supporting fibroblasts</h3>
+          <p>My master's project developed a gene-plasticity-based approach to characterise CAF heterogeneity and investigated SUSD2-positive CAFs in pancreatic cancer. This provides a relevant foundation for studying specialised fibroblast states and their potential roles in organising local immune responses. I would be keen to learn how inflammatory FAP-positive fibroblasts respond to LTβR signalling in the context of TLS induction.</p>
+        </div>
+        <div class="fit-card">
+          <h3>Defining TLS organisation with single-cell and spatial data</h3>
+          <p>I use Scanpy/Seurat and Squidpy for single-cell and spatial transcriptomic analysis, including cell-state annotation, neighbourhood enrichment, spatial co-occurrence and spatially variable gene analysis. These approaches could help characterise fibroblast, lymphocyte, dendritic-cell and vascular-cell states across different levels of TLS organisation.</p>
+        </div>
+        <div class="fit-card">
+          <h3>Connecting stromal signals to immune function</h3>
+          <p>My analyses include CellChat, NicheNet, CellPhoneDB and SecAct to prioritise candidate cell–cell communication pathways. In this project, I would be interested in examining LTβR-associated programmes alongside chemokine and stromal networks potentially involved in lymphocyte recruitment, HEV features and TLS maturation, then distinguishing computational hypotheses from experimentally supported mechanisms.</p>
+        </div>
+        <div class="fit-card">
+          <h3>Experimental grounding</h3>
+          <p>I have experience with mouse tumour models, conditional gene perturbation, flow cytometry/FACS, immunofluorescence, histology and tissue processing. I have also contributed to organoid work in a collaborative setting. I would bring this foundation to training in orthotopic colorectal tumour organoid models, longitudinal tumour monitoring, high-parameter immune phenotyping and multiplex tissue imaging.</p>
+        </div>
+        <div class="fit-card">
+          <h3>Why this project</h3>
+          <p>I want to move from describing stromal heterogeneity towards understanding how stromal cells organise functional anti-tumour immunity. TLS induction offers a clear setting in which to integrate fibroblast biology, immune-cell localisation and function, and spatially resolved molecular mechanisms in a clinically important metastatic cancer.</p>
+        </div>
+      </div>
+      <p class="meta" style="margin-top:16px;">Project-specific interests are presented as questions I would investigate, not as results already established in my previous work.</p>
+    </section>
+
+
+    <section id="awards">
+      <h2>Honors &amp; Awards</h2>
+      <div class="award-grid">
+        <figure class="award">
+          <img src="assets/award_research_excellence.png" alt="Award of Scientific Research, Peking University">
+          <figcaption><h3>Award of Scientific Research</h3><p>Peking University</p></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/award_academic_excellence.png" alt="Award of Academic Excellence, Peking University">
+          <figcaption><h3>Award of Academic Excellence</h3><p>Peking University</p></figcaption>
+        </figure>
+        <figure class="award">
+          <img src="assets/award_excellent_graduate.png" alt="Excellent Graduate, Peking University">
+          <figcaption><h3>Excellent Graduate</h3><p>Peking University</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="computational">
+      <h2>Selected Computational Results</h2>
+      <p class="meta">Bulk and single-cell transcriptomics analyses I have performed and presented. Some results are unpublished — please do not redistribute.</p>
+
+      <div class="group-label">Bulk RNA-seq &amp; pan-cancer transcriptomics</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/pancancer_de.png" alt="Pan-cancer differential expression analysis">
+          <figcaption><span class="tag">TCGA · Differential expression</span><h3>Pan-cancer expression analysis</h3><p>Cross-tumour differential expression to characterise candidate gene regulation and tumour-associated patterns.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/pancancer_corr.png" alt="Pan-cancer correlation of immune and stromal genes">
+          <figcaption><span class="tag">Gene correlation</span><h3>Immune–stromal associations</h3><p>Correlation analysis linking stromal-associated genes with immune features to generate mechanistic hypotheses.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/tcga_de.png" alt="TCGA differential expression">
+          <figcaption><span class="tag">TCGA</span><h3>TCGA expression differences</h3><p>Expression comparison of candidate genes across tumour and normal tissue.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/pancancer_expr_corr.png" alt="Pan-cancer expression correlation">
+          <figcaption><span class="tag">Pan-cancer correlation</span><h3>Pan-cancer expression correlation</h3><p>Cross-tumour gene–gene co-expression relationships.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Survival &amp; clinical relevance</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/survival.png" alt="Survival analysis">
+          <figcaption><span class="tag">Survival analysis</span><h3>Survival analysis</h3><p>Association between candidate gene expression and patient survival.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/prognosis.png" alt="Prognostic analysis">
+          <figcaption><span class="tag">Prognostic analysis</span><h3>Pancreatic cancer prognosis</h3><p>Kaplan–Meier and prognostic validation to assess clinical relevance.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">CAF heterogeneity &amp; network methods</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/new_algo_gene.png" alt="New algorithm for gene discovery">
+          <figcaption><span class="tag">Method development</span><h3>Gene-plasticity algorithm</h3><p>A plasticity-based framework for rapidly identifying novel CAF subtypes and prioritising candidates such as SUSD2.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/wgcna.png" alt="WGCNA analysis">
+          <figcaption><span class="tag">WGCNA</span><h3>Weighted gene co-expression networks</h3><p>Network analysis to identify gene modules associated with clinical or biological traits.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/coexpr_mutual_excl.png" alt="Co-expression and mutual exclusivity screen">
+          <figcaption><span class="tag">Feature screen</span><h3>Co-expression / mutual exclusivity</h3><p>Screen for genes showing co-expression or mutually exclusive expression patterns.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/graph_grism.png" alt="Multi-omics analysis">
+          <figcaption><span class="tag">Multi-omics</span><h3>Multi-omics analysis</h3><p>Integration of multiple omics layers to resolve gene relationships.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Enrichment &amp; functional annotation</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/go_kegg_enrichment.png" alt="GO KEGG pathway enrichment">
+          <figcaption><span class="tag">Pathway enrichment</span><h3>GO / KEGG enrichment</h3><p>Functional annotation of gene lists via Gene Ontology and KEGG pathways.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/venn_enrichment.png" alt="Venn diagram of gene enrichment">
+          <figcaption><span class="tag">Set comparison</span><h3>Venn gene comparison</h3><p>Overlap analysis across gene sets to identify shared and unique candidates.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/hallmark_enrichment.png" alt="Hallmark enrichment analysis">
+          <figcaption><span class="tag">GSEA</span><h3>Hallmark enrichment</h3><p>Hallmark gene-set enrichment to characterise biological states.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/enrichment.png" alt="Enrichment analysis">
+          <figcaption><span class="tag">Enrichment</span><h3>Enrichment analysis</h3><p>Additional enrichment results supporting the candidate gene story.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/gep.png" alt="GEP analysis">
+          <figcaption><span class="tag">Gene expression programs</span><h3>GEP analysis</h3><p>Gene-expression-program analysis to capture cellular programs in bulk or single-cell data.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Multi-omics &amp; chromatin</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/atacseq.png" alt="ATAC-seq analysis">
+          <figcaption><span class="tag">ATAC-seq</span><h3>Chromatin accessibility</h3><p>ATAC-seq analysis to relate regulatory elements to candidate genes.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/public_datamining.png" alt="Large public data mining">
+          <figcaption><span class="tag">Data mining</span><h3>Large-scale public data mining</h3><p>Integration and mining of large public transcriptomic datasets.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/acc_tumour_schematic.png" alt="ACC tumour analysis schematic">
+          <figcaption><span class="tag">Study overview</span><h3>ACC tumour analysis</h3><p>Overview schematic of an adenoid cystic carcinoma analysis workflow.</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="spatial">
+      <h2>Spatial &amp; Single-cell Multi-omics</h2>
+      <p class="lead">I have extensive computational experience analysing public spatial transcriptomics and spatial imaging datasets — including MERFISH and CosMx — using <strong>Squidpy</strong> and <strong>Scanpy</strong>. My experience focuses on downstream computational analysis rather than operating the experimental platforms themselves.</p>
+      <p class="meta">A complete record of my spatial analysis workflow is available in the notebook: <a href="Squidpy_NotebookZhengKuang_shared_cleared.ipynb">Squidpy_NotebookZhengKuang_shared_cleared.ipynb</a>.</p>
+
+      <div class="group-label">Own single-cell &amp; spatial analyses</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/computational/umap.png" alt="UMAP clustering">
+          <figcaption><span class="tag">Single-cell</span><h3>UMAP clustering</h3><p>Single-cell clustering and dimensionality reduction.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/ccc_1.png" alt="Cell-cell communication analysis">
+          <figcaption><span class="tag">Cell–cell communication</span><h3>Cell–cell communication (I)</h3><p>Ligand–receptor interaction analysis to infer intercellular signalling.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/ccc_2.png" alt="Cell-cell communication analysis 2">
+          <figcaption><span class="tag">Cell–cell communication</span><h3>Cell–cell communication (II)</h3><p>Additional communication analysis across cell states.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/scanpy_dotplot.png" alt="Scanpy expression dotplot">
+          <figcaption><span class="tag">Scanpy</span><h3>Marker expression dotplot</h3><p>Dotplot of marker gene expression across clusters.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/pseudotime.png" alt="Pseudotime trajectory">
+          <figcaption><span class="tag">Trajectory</span><h3>Pseudotime analysis</h3><p>Trajectory inference of cell-state transitions.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/st_expression.png" alt="Spatial transcriptomics expression">
+          <figcaption><span class="tag">Spatial expression</span><h3>Spatial expression analysis</h3><p>Spatial distribution of gene expression in tissue.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/cell_proportion.png" alt="Cell proportion analysis">
+          <figcaption><span class="tag">Composition</span><h3>Cell proportion analysis</h3><p>Deconvolution of cell-type proportions across samples.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/cytokine_expression.png" alt="Cytokine expression analysis">
+          <figcaption><span class="tag">Expression</span><h3>Cytokine expression</h3><p>Expression profiling of cytokine-related genes.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/cell_density.png" alt="Single-cell density analysis">
+          <figcaption><span class="tag">Single-cell spatial</span><h3>Cell density analysis</h3><p>Spatial quantification of single-cell density across the tissue.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/computational/st_cell_annotation.png" alt="Spatial transcriptomics cell annotation">
+          <figcaption><span class="tag">Spatial annotation</span><h3>Spatial cell annotation</h3><p>Cell-type annotation mapped onto spatial transcriptomics coordinates.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Pipeline demonstration on published datasets (Squidpy)</div>
+      <p class="meta">The figures below reproduce my analysis of published spatial datasets using Squidpy, covering spatial graphs, neighbourhood enrichment, co-occurrence, Ripley's statistics, Moran's I, cell–cell communication, image-feature clustering and 3D spatial data.</p>
+
+      <div class="group-label">Spatial neighbourhood &amp; co-occurrence</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/squidpy/imc_spatial.png" alt="IMC spatial cell-type map">
+          <figcaption><span class="tag">Spatial scatter</span><h3>Spatial cell-type mapping</h3><p>Spatial layout of annotated cell types in imaging mass cytometry data.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/imc_cooccurrence.png" alt="Spatial co-occurrence analysis">
+          <figcaption><span class="tag">Co-occurrence</span><h3>Spatial co-occurrence</h3><p>Quantification of cluster co-occurrence as a function of distance.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/imc_nhood.png" alt="Neighbourhood enrichment">
+          <figcaption><span class="tag">Neighbourhood enrichment</span><h3>Neighbourhood enrichment</h3><p>Permutation-based enrichment of spatial cell-type proximity.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/seqfish_nhood.png" alt="seqFISH neighbourhood enrichment">
+          <figcaption><span class="tag">seqFISH</span><h3>seqFISH spatial enrichment</h3><p>Neighbourhood enrichment across seqFISH cell-type annotations.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Spatially variable genes &amp; multiplexed data</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/squidpy/slideseq_moran.png" alt="Moran's I spatially variable genes">
+          <figcaption><span class="tag">Moran's I</span><h3>Spatially variable genes</h3><p>Identification of spatially structured genes via Moran's I autocorrelation.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/merfish_3d.png" alt="MERFISH 3D spatial embedding">
+          <figcaption><span class="tag">3D spatial</span><h3>3D spatial reconstruction</h3><p>Three-dimensional spatial analysis of consecutive MERFISH sections.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/mibi_spatial.png" alt="MIBI-TOF spatial segmentation">
+          <figcaption><span class="tag">MIBI-TOF</span><h3>Multiplexed proteomics</h3><p>Spatial segmentation of single-cell metabolic profiles in MIBI-TOF data.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/fouri_spatial.png" alt="4i spatial analysis">
+          <figcaption><span class="tag">4i</span><h3>Iterative immunofluorescence</h3><p>Spatial analysis of 4i imaging data.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/seqfish_umap.png" alt="seqFISH UMAP embedding">
+          <figcaption><span class="tag">seqFISH</span><h3>Single-cell UMAP embedding</h3><p>UMAP projection of seqFISH cells annotated across 22 cell types.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/squidpy/nanostring_segment.png" alt="Nanostring spatial segmentation">
+          <figcaption><span class="tag">Nanostring</span><h3>Spatial segmentation</h3><p>Cell segmentation on Nanostring CosMx-style spatial data.</p></figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+    <section id="experimental">
+      <h2>Selected Experimental Results</h2>
+      <p class="meta">Wet-lab validation of the stromal–immune hypothesis, spanning in vivo models, flow cytometry, protein work and organoids. Items I contributed to as part of a collaboration are marked as such.</p>
+
+      <div class="group-label">In vivo &amp; genetic perturbation</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/experimental/crispr_susd2ko.png" alt="CRISPR/Cas9 Susd2 knockout mouse">
+          <figcaption><span class="tag">CRISPR/Cas9</span><h3>CRISPR/Cas9 Susd2 knockout mouse</h3><p>Generation of a <em>Susd2</em> conditional knockout to test CAF function.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/pdac_mouse_model.png" alt="Pancreatic cancer mouse model">
+          <figcaption><span class="tag">In vivo</span><h3>Pancreatic cancer mouse model</h3><p>Orthotopic tumour modelling to assess the effect of <em>Susd2</em> deletion.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/vg_staining.png" alt="VG collagen staining">
+          <figcaption><span class="tag">Histology</span><h3>Collagen deposition (VG staining)</h3><p>Van Gieson staining showing reduced collagen fibre deposition upon <em>Susd2</em> deletion.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/immunofluorescence.png" alt="Immunofluorescence">
+          <figcaption><span class="tag">Immunofluorescence</span><h3>Immunofluorescence</h3><p>In situ analysis of immune infiltration and stromal markers.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Flow cytometry &amp; cell sorting</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/experimental/flow_cd8.png" alt="Flow cytometry CD8 T cells">
+          <figcaption><span class="tag">Flow cytometry</span><h3>CD8<sup>+</sup> T-cell analysis</h3><p>Quantification of CD8<sup>+</sup> T-cell infiltration by flow cytometry.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/flow_mhcii_mac.png" alt="Flow cytometry MHCII macrophages">
+          <figcaption><span class="tag">Flow cytometry</span><h3>MHC-II<sup>+</sup> macrophage analysis</h3><p>Quantification of MHC-II<sup>+</sup> macrophages in the tumour microenvironment.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/flow_gating.png" alt="Flow gating strategy">
+          <figcaption><span class="tag">Flow cytometry</span><h3>Gating strategy</h3><p>Representative gating scheme used to define stromal and immune populations.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/flow_sort_cells.png" alt="Flow sorting cells">
+          <figcaption><span class="tag">FACS</span><h3>Cell sorting</h3><p>Isolation of CAFs using a PDPN<sup>+</sup>CD31<sup>−</sup>EpCAM<sup>−</sup>CD45<sup>−</sup> strategy.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/flow_sort_rnaseq.png" alt="Flow-sorted RNA-seq">
+          <figcaption><span class="tag">FACS + RNA-seq</span><h3>Sorted population RNA-seq</h3><p>Transcriptomics of flow-sorted cell populations.</p></figcaption>
+        </figure>
+      </div>
+
+      <div class="group-label">Protein engineering &amp; in vitro models</div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/experimental/fc_fusion_schematic.png" alt="Fc fusion protein schematic">
+          <figcaption><span class="tag">Protein design</span><h3>Fc fusion protein</h3><p>Design of Fc fusion proteins to block ligand–receptor interactions.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/fc_purification.png" alt="Fc protein purification">
+          <figcaption><span class="tag">Biochemistry</span><h3>Fc protein purification</h3><p>Expression and purification of recombinant Fc fusion proteins.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/fc_injection.png" alt="Fc fusion protein injection">
+          <figcaption><span class="tag">In vivo</span><h3>Tumour Fc fusion injection</h3><p>Administration of engineered proteins in tumour models.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/organoid.png" alt="Organoid culture">
+          <figcaption><span class="tag">In vitro · Collaborative</span><h3>Organoid culture</h3><p>Human corneal epithelial organoids cultured from corneal rim tissue (collaboration, under review).</p></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/experimental/ai_graphic.png" alt="Literature summary figure">
+          <figcaption><span class="tag">Illustrator / Photoshop</span><h3>Literature summary figure</h3><p>Summary figure prepared with Adobe Illustrator and Photoshop to synthesise the literature.</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Computational</h3>
+          <ul>
+            <li>R, Python, Linux/Bash and high-performance computing</li>
+            <li><span class="hl">Single-cell (Scanpy/Seurat) and bulk RNA-seq analysis</span></li>
+            <li><span class="hl">Computational analysis of spatial data (Squidpy/Scanpy: Visium, Slide-seqV2, seqFISH, MERFISH, CosMx, MIBI-TOF, 4i, Nanostring)</span></li>
+            <li><span class="hl">Cell–cell communication (CellChat, NicheNet, CellPhoneDB / Squidpy ligrec, SecAct)</span></li>
+            <li><span class="hl">Multi-omics integration (transcriptomics, ATAC-seq, proteomics, metabolomics)</span></li>
+            <li>AlphaFold3-based protein–interaction screening</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Experimental</h3>
+          <ul>
+            <li><span class="hl">Flow cytometry and fluorescence-activated cell sorting</span></li>
+            <li><span class="hl">CRISPR/Cas9 design and gene perturbation</span></li>
+            <li>Orthotopic and subcutaneous mouse tumour models</li>
+            <li>Recombinant Fc fusion protein design and purification</li>
+            <li>Immunofluorescence, immunohistochemistry, Western blotting</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Scientific communication</h3>
+          <ul>
+            <li>Scientific figure preparation with Adobe Illustrator and Photoshop</li>
+            <li>Literature summary and graphical abstract design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For research enquiries or potential collaborations, please contact me by email.</p>
+      <div class="contact">
+        <span>Email: <strong><a href="mailto:kuangzheng@hsc.pku.edu.cn">kuangzheng@hsc.pku.edu.cn</a></strong></span>
+        <span>CV: <strong><a href="CV_ZhengKuang.pdf">CV_ZhengKuang.pdf</a></strong></span>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Zheng Kuang · Research Portfolio · Some results are unpublished — please do not redistribute</div></footer>
+</body>
+</html>
